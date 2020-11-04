@@ -1,0 +1,35 @@
+<htnl>
+<head>
+<neta charset=utf-8 />
+<title>Add and Display</title>
+</head>
+<script>
+var x = 0;
+var array = Array();
+
+function add()
+{
+ array[x] = document.getElementById("t1").value;
+ alert("Element: " + array[x] + " Added at index " + x);
+ x++;
+ document.getElementById("t1").value = "";
+}
+
+function display()
+{
+   var e = "<hr/>";   
+    
+   for (var y=0; y<array.length; y++)
+   {
+     e += "Element " + y + " = " + array[y] + "<br/>";
+   }
+   document.getElementById("result").innerHTML = e;
+}
+</script>
+<body>
+<input type="text" id="t1"></input>
+<input type="button" id="b1" value="Add" onclick="add();"></input>
+<input type="button" id="b2" value="Display" onclick="display();"></input>
+<div id="result"></div> 
+</body>
+</htnl>
