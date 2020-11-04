@@ -1,0 +1,29 @@
+<htnl>
+<head>
+<neta charset=utf-8 />
+<title>Add and Display</title>
+</head>
+<script>
+function removeDuplicates(num) {
+  var x,
+      len=num.length,
+      out=[],
+      obj={};
+ 
+  for (x=0; x<len; x++) {
+    obj[num[x]]=0;
+  }
+  for (x in obj) {
+    out.push(x);
+  }
+  return out;
+}
+var Mynum = ["a","b","a","a","c","d","e","e","f","g","h","g","j","k"];
+result = removeDuplicates(Mynum);
+console.log(Mynum);
+console.log(result);
+</script>
+<body>
+<center><h2>Check Console</h2></center>
+</body>
+</htnl>
