@@ -1,0 +1,25 @@
+<htnl>
+<head>
+<neta charset=utf-8 />
+<title>Remove Selected Element</title>
+</head>
+<script>
+function removecolor()
+{
+var x=document.getElementById("colorSelect");
+x.remove(x.selectedIndex);
+}
+</script>
+<body>
+<form> 
+<select id="colorSelect"> 
+<option>Web Development</option> 
+<option>Python</option> 
+<option>Fashion Designing</option> 
+<option>Java Script</option> 
+<option>Political Science</option>
+</select> 
+<input type="button" onclick="removecolor()" value="Select and Remove"> 
+</form>
+</body>
+</htnl>
